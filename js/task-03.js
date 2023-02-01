@@ -12,3 +12,12 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const galleryHtml = document.querySelector(".gallery") // consulto la ul
+
+const items = images.map(item => `alt="${item.alt}"` +  " " + `src="${item.url}"`); // retorna nueva array con alt y src
+const etique = items.map( eti => `<li><img ${eti}></li>` ).join("");  // retorna array anterior con etiqueta li y img
+galleryHtml.insertAdjacentHTML("afterbegin", etique); // inserta antes del 1er elemento
+console.log(galleryHtml);
+
+
