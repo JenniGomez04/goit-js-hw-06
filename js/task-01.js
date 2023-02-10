@@ -23,3 +23,15 @@ console.log('Elements:', elementsTechnologies);
 
 // children = devuelve elementos secundarios del elemento que se invoco
 // childrenElementCount = propiedad de solo lectura devuelve el número de elementos secundarios de este elemento.
+
+
+/*
+let categoryUl = document.querySelector("#categories");
+console.log("Number of categories:", categoryU.length);
+
+for (const item of categoryUl){
+    const title = item.querySelector("h2");
+    const list = item.querySelector("li");
+    console.log("Category": , title.textContent); // para cuando es texto 
+    console.log("Elements": , list.length); // cuando es cantidad
+}*/
